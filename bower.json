@@ -1,0 +1,9 @@
+{
+    "name": "rogermoore.io",
+    "version": "1.2.0",
+    "dependencies": {
+        "skeleton-css": "2.0.4",
+        "jquery": "2.2.4",
+        "angularjs": "1.5.5"
+    }
+}
