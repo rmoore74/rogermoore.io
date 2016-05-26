@@ -1,0 +1,47 @@
+body {
+    color: #A9A9A9;
+}
+.container {
+    width: 700px;
+}
+
+#head {
+    margin-top: 50px;
+}
+
+#head h2 {
+    color: #A9A9A9;
+}
+
+.navbar {
+
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    margin-right: 15px;
+    color: #A9A9A9;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #8DC5CC;
+}
+
+.navbar li.active a {
+    color: #8DC5CC;
+}
+
+.content-view {
+    margin-top: 20px;
+}
