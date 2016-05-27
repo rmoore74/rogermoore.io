@@ -76,3 +76,12 @@ a {
 .home-content {
     text-align: justify;
 }
+
+.home-content a {
+    text-decoration: none;
+    color: #A9A9A9;
+}
+
+.home-content a:hover {
+    color: #8DC5CC;
+}
