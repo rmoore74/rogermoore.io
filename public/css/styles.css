@@ -6,6 +6,10 @@ footer {
     font-size: small;
 }
 
+a {
+    color: #8DC5CC;
+}
+
 .header-container {
     width: 100%;
 }
