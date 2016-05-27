@@ -1,6 +1,24 @@
 body {
     color: #A9A9A9;
 }
+
+footer {
+    font-size: small;
+}
+
+.header-container {
+    width: 100%;
+}
+
+.body-container {
+
+}
+
+.footer-container {
+    margin-top: 50px;
+    width: 100%;
+}
+
 .container {
     width: 700px;
 }
@@ -44,4 +62,13 @@ body {
 
 .content-view {
     margin-top: 20px;
+}
+
+.home-icon {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.home-content {
+    text-align: justify;
 }

@@ -8,28 +8,44 @@
 
         <!-- skeleton css framework -->
         <link rel="stylesheet" href="libs/skeleton-css/css/skeleton.css">
-
+        
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+        
         <!-- custom css style -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body ng-app="rogermooreio" ng-controller="MainController">
+        <div class="header-container">
+            <div id="head" class="container">
+                <div class="row">
+                    <h2>rogermoore<span style="color: #8DC5CC">.</span>io</h2>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li class="active"><a href="/">home</a></li>
+                        <li><a href="/about">about</a></li>
+                        <li><a href="/projects">projects</a></li>
+                        <li><a href="/blog">blog</a></li>
+                        <li><a href="/contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        <div id="head" class="container">
-            <div class="row">
-                <h2>rogermoore<span style="color: #8DC5CC">.</span>io</h2>
+        <div class="body-container">
+            <div class="container">
+                <div class="row content-view">
+                    <div ng-view></div>
+                </div>
             </div>
-            <div class="navbar">
-                <ul>
-                    <li class="active"><a href="/">home</a></li>
-                    <li><a href="/about">about</a></li>
-                    <li><a href="/projects">projects</a></li>
-                    <li><a href="/blog">blog</a></li>
-                    <li><a href="/contact">contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="row content-view">
-                <div ng-view></div>
+        </div>
+        
+        <div class="footer-container">
+            <div class="container">
+                <footer>
+                    <p>&copy; Roger Moore. 2016. <a href="https://github.com/rmoore74/rogermoore.io" target="_blank">View my source?</a></p>
+                </footer>
             </div>
         </div>
 
