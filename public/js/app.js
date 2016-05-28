@@ -1,1 +1,1 @@
-angular.module('rogermooreio', ['ngRoute', 'appRoutes', 'MainCtrl', 'ProjectCtrl']);
+angular.module('rogermooreio', ['ngRoute', 'appRoutes', 'NavbarCtrl', 'MainCtrl', 'ProjectCtrl']);

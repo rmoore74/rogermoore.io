@@ -21,13 +21,13 @@
                 <div class="row">
                     <h2>rogermoore<span style="color: #8DC5CC">.</span>io</h2>
                 </div>
-                <div class="navbar">
+                <div class="navbar" ng-controller="NavbarController">
                     <ul>
-                        <li class="active"><a href="/">home</a></li>
-                        <li><a href="/about">about</a></li>
-                        <li><a href="/projects">projects</a></li>
-                        <li><a href="/blog">blog</a></li>
-                        <li><a href="/contact">contact</a></li>
+                        <li ng-class="{ active: isActivePage('/') }"><a href="/">home</a></li>
+                        <li ng-class="{ active: isActivePage('/about') }"><a href="/about">about</a></li>
+                        <li ng-class="{ active: isActivePage('/projects') }"><a href="/projects">projects</a></li>
+                        <li ng-class="{ active: isActivePage('/blog') }"><a href="/blog">blog</a></li>
+                        <li ng-class="{ active: isActivePage('/contact') }"><a href="/contact">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,6 +54,7 @@
         <script src="libs/angular-route/angular-route.min.js"></script>
 
         <!-- custom angular JS -->
+        <script src="js/controllers/NavbarCtrl.js"></script>
         <script src="js/controllers/MainCtrl.js"></script>
         <script src="js/controllers/ProjectCtrl.js"></script>
         <script src="js/appRoutes.js"></script>
