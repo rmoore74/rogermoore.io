@@ -5,9 +5,15 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             templateUrl: 'views/home.html',
             controller: 'MainController'
         })
+        .when('/about', {
+            templateUrl: 'views/about.html'
+        })
         .when('/projects', {
             templateUrl: 'views/projects.html',
             controller: 'ProjectController'
+        })
+        .when('/blog', {
+            templateUrl: 'views/blog.html'
         })
         .when('/contact', {
             templateUrl: 'views/contact.html',

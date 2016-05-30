@@ -1,5 +1,6 @@
 body {
     color: #A9A9A9;
+    text-align: justify;
 }
 
 footer {
@@ -45,6 +46,41 @@ a {
 }
 
 .navbar li.active a {
+    color: #8DC5CC;
+}
+
+.social-bar {
+    text-align: center;
+}
+
+.social-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.social-bar li {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+}
+
+.social-bar li:hover {
+    color: #FFFFFF;
+    background-color: #F1F1F1;
+}
+
+.social-bar i {
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+.social-bar a {
+    color: #A9A9A9;   
+}
+
+.social-bar a:hover {
     color: #8DC5CC;
 }
 
