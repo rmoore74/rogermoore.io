@@ -6,6 +6,7 @@
         "jquery": "latest",
         "angular": "latest",
         "angular-route": "latest",
-        "font-awesome" : "latest"
+        "font-awesome" : "latest",
+        "lightbox2": "latest"
     }
 }
