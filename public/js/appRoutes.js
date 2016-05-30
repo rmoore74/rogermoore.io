@@ -12,6 +12,9 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         .when('/contact', {
             templateUrl: 'views/contact.html',
             controller: 'ContactController'
+        })
+        .otherwise({
+            redirectTo: '/'
         });
 
         $locationProvider.html5Mode(true);

@@ -3,28 +3,13 @@ body {
 }
 
 footer {
+    margin-top: 20px;
     font-size: small;
 }
 
 a {
     color: #8DC5CC;
-}
-
-.header-container {
-    width: 100%;
-}
-
-.body-container {
-
-}
-
-.footer-container {
-    margin-top: 50px;
-    width: 100%;
-}
-
-.container {
-    width: 700px;
+    text-decoration: none;
 }
 
 #head {
@@ -36,7 +21,7 @@ a {
 }
 
 .navbar {
-
+    margin-bottom: 20px;
 }
 
 .navbar ul {
@@ -53,7 +38,6 @@ a {
 .navbar li a {
     margin-right: 15px;
     color: #A9A9A9;
-    text-decoration: none;
 }
 
 .navbar li a:hover {
@@ -64,12 +48,8 @@ a {
     color: #8DC5CC;
 }
 
-.content-view {
-    margin-top: 20px;
-}
-
 .home-icon {
-    margin-top: 75px;
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -78,10 +58,17 @@ a {
 }
 
 .home-content a {
-    text-decoration: none;
     color: #A9A9A9;
 }
 
 .home-content a:hover {
     color: #8DC5CC;
+}
+
+.project-images {
+    margin-bottom: 20px;
+}
+
+.project-images img {
+    margin: 5px;
 }

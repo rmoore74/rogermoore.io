@@ -7,16 +7,20 @@
         <title>rogermoore.io</title>
 
         <!-- skeleton css framework -->
+        <link rel="stylesheet" href="libs/skeleton-css/css/normalize.css">
         <link rel="stylesheet" href="libs/skeleton-css/css/skeleton.css">
         
         <!-- font-awesome -->
         <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+        <!-- lightbox2 css -->
+        <link rel="stylesheet" href="libs/lightbox2/dist/css/lightbox.min.css">
         
         <!-- custom css style -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body ng-app="rogermooreio" ng-controller="MainController">
-        <div class="header-container">
+        <div class="container">
             <div id="head" class="container">
                 <div class="row">
                     <h2>rogermoore<span style="color: #8DC5CC">.</span>io</h2>
@@ -31,17 +35,11 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <div class="body-container">
             <div class="container">
-                <div class="row content-view">
-                    <div ng-view></div>
-                </div>
+                <div ng-view></div>
             </div>
-        </div>
-        
-        <div class="footer-container">
+            
             <div class="container">
                 <footer>
                     <p>&copy; Roger Moore. 2016. <a href="https://github.com/rmoore74/rogermoore.io" target="_blank">View my source?</a></p>
@@ -50,8 +48,10 @@
         </div>
 
         <!-- JS -->
+        <script src="libs/jquery/dist/jquery.min.js"></script>
         <script src="libs/angular/angular.min.js"></script>
         <script src="libs/angular-route/angular-route.min.js"></script>
+        <script src="libs/lightbox2/dist/js/lightbox.min.js"></script>
 
         <!-- custom angular JS -->
         <script src="js/controllers/NavbarCtrl.js"></script>
