@@ -13,6 +13,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             templateUrl: 'views/projects.html',
             controller: 'ProjectController'
         })
+        .when('/blog', {
+            templateUrl: 'views/blog.html',
+            controller: 'BlogController'
+        })
         .when('/contact', {
             templateUrl: 'views/contact.html',
             controller: 'ContactController'

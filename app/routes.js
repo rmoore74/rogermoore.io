@@ -3,9 +3,9 @@ var path = require('path');
 module.exports = function(app) {
 
     // before the SPA as blog will be own app
-    app.get('/blog', function(req, res) {
-        res.send("this will be the blog");
-    });
+    // app.get('/blog', function(req, res) {
+    //     res.send("this will be the blog");
+    // });
 
     // everything here is main homepage (SPA)
     app.get('*', function(req, res) {
