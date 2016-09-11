@@ -24,6 +24,9 @@ app.use(express.static(__dirname + '/public'));
 // set up server routes
 require('./app/routes')(app);
 
+// set up api routes
+app.use('/api', require('./app/email.api'));
+
 // start the server on port
 app.listen(port);
 console.log('Server running on port ' + port);
