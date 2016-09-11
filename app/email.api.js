@@ -1,5 +1,5 @@
 var sendmail = require('sendmail');
-var router     = express.Router();
+var router   = express.Router();
 
 module.exports = function(app) {
 
