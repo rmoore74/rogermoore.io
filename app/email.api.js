@@ -6,13 +6,7 @@ var config     = require('../config/mail.conf');
 
 router.post('/sendemail', function(req, res) {
 
-    // var transporter = nodemailer.createTransport('SMTP', {
-    //     service: 'Gmail',
-    //     auth: {
-    //         user: config.user,
-    //         pass: config.pass
-    //     }
-    // });
+    // TODO: to take request body and use user params
 
     var transporter = nodemailer.createTransport('smtps://' + config.user + ':' + config.pass + '@smtp.gmail.com');
 
