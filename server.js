@@ -1,5 +1,6 @@
 // import required modules
 var express        = require('express');
+var helmet         = require('helmet');
 var mongoose       = require('mongoose');
 var morgan         = require('morgan');
 var bodyParser     = require('body-parser');
@@ -9,6 +10,9 @@ var methodOverride = require('method-override');
 var app  = express();
 var db   = require('./config/db.conf');
 var port = process.env.PORT || 8080;
+
+// set up helmet for security
+app.use(helmet());
 
 // set up body-parser
 app.use(bodyParser.json());
