@@ -7,8 +7,8 @@ var methodOverride = require('method-override');
 
 // configuration
 var app  = express();
-var db   = require('./config/db');
-var port = process.env.PORT || 80;
+var db   = require('./config/db.conf');
+var port = process.env.PORT || 8080;
 
 // set up body-parser
 app.use(bodyParser.json());
