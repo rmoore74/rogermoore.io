@@ -45,7 +45,7 @@ angular.module('ProjectCtrl', []).controller('ProjectController', function($scop
                     imgUrl: '/img/projects/race_app/auth2.png'
                 },
                 {
-                    thumbUrl: '/img/projects/race_app/thumb/auth3-150x150.png',
+                    thumbUrl: '/img/projects/race_app/thumb/auth3-150x124.png',
                     imgUrl: '/img/projects/race_app/auth3.png'
                 },
                 {
