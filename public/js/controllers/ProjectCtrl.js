@@ -4,30 +4,62 @@ angular.module('ProjectCtrl', []).controller('ProjectController', function($scop
         {
             lightId: 'project-1',
             title: 'Dropshipping DB Manager',
-            description: 'blah',
+            description: 'This project involved creating a database item manager for a dropshipping venture that I was working on in the past. The main technologies used here for this project are PHP and SQL. Mainly because these work on the server that we were using to host the website was based on the traditional LAMP stack. The main functionality of the dropshipping item database manager is searching, adding, editing, and removing products etc.',
             pictures: [
                 {
-                    thumbUrl: '',
-                    imgUrl: ''
+                    thumbUrl: '/img/projects/dropship/thumb/login-150x150.png',
+                    imgUrl: '/img/projects/dropship/login.png'
                 },
                 {
-                    thumbUrl: '',
-                    imgUrl: ''
+                    thumbUrl: '/img/projects/dropship/thumb/dashboard-150x150.png',
+                    imgUrl: '/img/projects/dropship/dashboard.png'
+                },
+                {
+                    thumbUrl: '/img/projects/dropship/thumb/search_in_action-150x150.png',
+                    imgUrl: '/img/projects/dropship/search_in_action.png'
+                },
+                {
+                    thumbUrl: '/img/projects/dropship/thumb/product_page-150x150.png',
+                    imgUrl: '/img/projects/dropship/product_page.png'
+                },
+                {
+                    thumbUrl: '/img/projects/dropship/thumb/add_product-150x150.png',
+                    imgUrl: '/img/projects/dropship/add_product.png'
+                },
+                {
+                    thumbUrl: '/img/projects/dropship/thumb/edit_product-150x150.png',
+                    imgUrl: '/img/projects/dropship/edit_product.png'
                 }
             ]
         },
         {
             lightId: 'project-2',
             title: 'Magic Link Cloaker',
-            description: 'blah',
+            description: 'This was a fun little project that I worked on. Basically, the idea was to create a URL shortener to make ugly affiliate links (e.g., internet marketing) more bareable to look at. So in principle, it was similar to something like TinyURL. However, the idea here was that you could install the script on your website and then the links would be cloaked from your URL. So, you could mask an affiliate link and just give the user a link from your site which would then redirect to the affiliated product. The source for this can be found on my GitHub.',
             pictures: [
                 {
-                    thumbUrl: '',
-                    imgUrl: ''
+                    thumbUrl: '/img/projects/mlc/thumb/mlc_login-150x150.png',
+                    imgUrl: '/img/projects/mlc/mlc_login.png'
                 },
                 {
-                    thumbUrl: '',
-                    imgUrl: ''
+                    thumbUrl: '/img/projects/mlc/thumb/mlc-300x230.png',
+                    imgUrl: '/img/projects/mlc/mlc.png'
+                },
+                {
+                    thumbUrl: '/img/projects/mlc/thumb/mlc2-150x150.png',
+                    imgUrl: '/img/projects/mlc/mlc2.png'
+                },
+                {
+                    thumbUrl: '/img/projects/mlc/thumb/mlc3-150x150.png',
+                    imgUrl: '/img/projects/mlc/mlc3.png'
+                },
+                {
+                    thumbUrl: '/img/projects/mlc/thumb/mlc4-150x150.png',
+                    imgUrl: '/img/projects/mlc/mlc4.png'
+                },
+                {
+                    thumbUrl: '/img/projects/mlc/thumb/mlc5-150x150.png',
+                    imgUrl: '/img/projects/mlc/mlc5.png'
                 }
             ]
         },
