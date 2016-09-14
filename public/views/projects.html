@@ -8,11 +8,11 @@
             <span>{{ proj.description }}</span>
         </div>
         <div ng-repeat="img in proj.pictures">
-            <div class="row project-images">
+            <span class="row project-images">
                 <a href="{{ img.imgUrl }}" data-lightbox="project-1">
                     <img src="{{ img.thumbUrl }}" width="50px" height="50px" />
                 </a>
-            </div>
+            </span>
         </div>
     </div>
 </section>
