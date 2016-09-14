@@ -1,0 +1,23 @@
+﻿This is a little project that I’ve been working on. I’ve named it the ‘Magic Link Cloaker’! Simply, it is just a small web application that takes long and unsightly URLs and converts them to a shorter, more user-friendly URL. I was inspired to work on this project whilst journeying down some internet marketing ventures.
+
+Features
+This web script is pretty straightforward and has only a few functions but I’ll list them below anyway. One of the main things that I’m excited about implementing in this script is the analytics.
+
+Cloak links
+Manage links
+Collect/view statistics
+Update account settings
+Easy install
+Easy uninstall
+Change directory of cloaked links
+
+
+Here are some screenshots of the UI for Magic Link Cloaker.
+[These can now be found on the Projects page!]
+
+Source
+Interested in looking at the source for this project? I’ve posted it onto my GitHub account and I’ve posted the link below, so you can have a look at it there! Take care though, as this project is still a work-in-progress and may still contain bugs.
+
+View source on GitHub
+
+Thanks :)

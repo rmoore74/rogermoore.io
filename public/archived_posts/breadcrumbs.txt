@@ -1,0 +1,40 @@
+So, whilst working on a real-estate website for a group project at university, we were faced with a little bit of a dilemma. When it came to users adding their property to the database, they were faced with a really long form and to make things look a bit neater, we decided to create a multi-steps form. We wanted to display each step of the process above the form, but weren’t sure how to go about this. So I thought that we could implement the breadcrumbs feature, and I could make it increment and decrement dependent on the users actions (e.g., clicking next and previous on the multi-steps form).
+
+So, in short, to achieve this I created a little script in jQuery to make this possible. Now I’m going to show you exactly how I did this, and hopefully help anyone else who is facing a similar situation!
+
+Here’s the JSFiddle if you want a demo.
+
+Let’s get down to business! To begin with, this is a script to supplement the Twitter Bootstrap platform, so if you haven’t done so, go and include the appropriate files in your project.
+
+// Link to the bootstrap css stylesheet, place in between head tags
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+// You also need jQuery, as this is Bootstrap requires and the dynamic-crumbs script requires it also
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+After you’ve gone and done that, you are going to need to go ahead and include the file for dynamic breadcrumbs. To do that, add the appropriate code below, right before the closing body tags.
+
+// Change the directory accordingly
+<script src="js/dynamic-crumbs.js"></script>
+Now to make sure that dynamic-crumbs.js works properly with your Bootstrap breadcrumbs, you need to make sure that you add the class “dynamic-crumbs” to your ordered list tags. This tells dynamic-crumbs that these are the breadcrumbs you want to make dynamic. Then, to your next and previous links you need to add the classes “increase” or “decrease” accordingly. Like shown below:
+
+<ol class="breadcrumb dynamic-crumbs">
+	<li>Stage 1</li>
+	<li>Stage 2</li>
+	<li>Stage 3</li>
+	<li>Stage 4</li>
+	<li>Stage 5</li>
+</ol>
+
+<ul class="pager">
+	<li>Previous</li>
+	<li>Next</li>
+</ul>
+Make sure to note that each list item in the ordered list contains anchor tags and it is important to make sure that each item in the list has assigned its own unique ID. And it’s really as simple as that!
+
+dynamic-crumbs.js the theory
+Now if you want to get into the nitty-gritty of it all, it isn’t really that hard to understand either. You can then, hopefully, add to it and modify it to aid your specific needs.
+
+The main methodology behind dynamic-crumbs.js is that we have to extract the current list items that are held within the ordered list tag, by identifying it with the ‘dynamic-crumbs’ class name. These are then stored and pushed into a stack, called crumbs, and are then reordered and stored into an array. Using jQuery, the current ordered list is then emptied so that all the breadcrumbs do not appear when the user loads the page. Next, the functions addCrumb() and removeCrumb() are used to add and remove the breadcrumbs accordingly as to when the user presses the next or previous buttons. These methods implement another stack so that the order is maintained at all times.
+
+And that’s pretty much all there is to it, if you want to take a closer look for yourself, check the code out on GitHub and feel free to modify or use as much as you want!

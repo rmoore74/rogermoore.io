@@ -1,0 +1,26 @@
+﻿So I said I might post something else today, and well here I am yet again.
+
+Okay, so this post might be a bit of a cheat. I just thought it would be a good idea to port over the projects that I display on my other site and have them on here. The reason for this is because I’m not too fond of my domain name choice and I don’t want to come across as pretentious! You’re probably wondering what it was now. Okay, moore.guru, there you go. I know. But it’s hard to get a domain name with such a famous name!!
+
+Anyway… Here are some of the projects that I worked on many moons ago.
+
+Race Data Application
+“This is a project that I created for my programming module at King’s College. This was part of my second coursework in the module. This application pulls data from an online database, using a jar file that our tutor provided us with, which allows you to choose athletes and add an athlete friend to the main list. You can add or remove these friends. When you double click on a friend it will take you to their race results. You can also tweet race results to your Twitter account and you can view a graphical representation of the results, via charts. To create this project I used Java, the Java Swing library, the Twitter4j library, and the JFreeChart library. This was a fun and challenging piece of coursework.”
+
+Android MD5 Checksum App
+“Okay, so visually this application doessn’t look too great at the moment. This is because this app is a work in progress. To expand my skills in Android development, I set myself the task of creating an application that allows the user to choose a file on their phone and generate its unique MD5 hash. I also provide the option to convert plain text strings into MD5 as well. When the MD5 is generated the hash is automatically copied to clipboard and an Android toast is displayed to alert the user of this. I just have to get file checksum generation working and then sort out the user interface until I have completed this project.”
+
+First Person Messabout
+“This is a project I created whilst working on ‘Unit 22 – Developing Computer Games’, whilst I was at college. For this project, the rest of my class were using Blender to design and create their games, but I wanted to challenge myself and I asked my tutor if I was able to create the game in something other than Blender. I ended up using C++ with a game development library. The library that I used was DarkGDK. I had no experience with DarkGDK and limited experience with C++, so I had to get comfortable with C++ again as well as learning a new library. As I was developing the game from scratch using hard code, I made use of models that I had found off of the internet (this was allowed as long I referenced all external sources, which I did). Within my limited timescale I was able to create a game where you were able to roam the map freely. The game included physics, allowing the user to jump up and down and fall off of objects etc. Collision detection was also working, so the user couldn’t just walk through walls. The user moved around using W, A, S, and D keys, with spacebar allocated for jumping.”
+
+X Ercise Booking Application
+“This was a project that I was assigned whilst I was at Bexhill College. For one of my college assignments I had to create a booking form application for a gym. This application would allow users to book equipment in the gym for a certain date at a certain time. Users were also able to view bookings that had already been made. Bookings were stored in an external database. I used VB.NET to create this application.”
+
+Enigma Machine
+“This is another project that I created in VB.NET. This was a project set to me by my tutor at Bexhill College. It was a really fun and exciting project and pushed me to my limits of skill, at the time. This is an application that simulates the famous Enigma machine which was used by German military to send encoded messages to each other. These transmissions were famously cracked by Alan Turing!”
+Veloci Games
+“This is a website that my friend and I designed and created for free to help out a freelance game designer. In the end, the game designer didn’t use the website that we created, but we were proud of what we had created. This website is rather dated and was created back in 2010 when we were quite young. The site included HTML, CSS, PHP (used for the Twitter feed), and jQuery.”
+
+So there we have it folks. These are some of the projects that I had worked on and hosted on my previous website. End of cheat post. That was easy!
+
+Thanks.

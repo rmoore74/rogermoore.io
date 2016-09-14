@@ -1,0 +1,13 @@
+So I’ve finally been able to get round to posting something new to this blog, now that exams are over! Exams and revision have been consuming the majority of my life over the past couple of months so I had to put this on the backburner a little.
+
+Apart from having exams, I’ve also just left my flat in London. So during the brief period of time since my last exam, constituting of about two days, my girlfriend and I have had to pack up all our stuff and get out of our flat. Needless to say, that was quite the strain! We’re both back at home living with our parents for the time-being.
+
+Now that I’ve got a bit of time to pursue other things than exam revision, I’ve decided to purchase two new books that should be arriving soon. I’ve decided to buy a book on Node.js and another book on the MEAN stack which I am particularly excited about learning and implementing in my projects! Aside from that, I’ve also recently finished a book on Growth Hacking and have almost finished a second book on Big Data – which when you combine the two topics provide for some rather inspirational and exciting ideas. I’d recommend the book on growth hacking that I’ve been reading as, though it is a rather small and quick book to read, it gives you the fundamentals and correct mentality that you should go ahead with when starting projects and the like. It puts emphasis on creating a great product, as opposed to creating a mediocre product and using traditional marketing techniques to push leads. The book on Big Data has also been an interesting read, however, not totally unique as it provides many examples that are provided within the book ‘Big Data‘ by Mayer-Schonberger and Cukier, but it does provide an alternative and thought-provoking idea of something Bernard Marr likes to call smart data. I would recommend both of these books.
+
+When it comes to things not big data, programming, or technology related, I’ve finally got some time to start playing more guitar again. Also my girlfriend is helping me learn French. So I’ve now changed the languages on all of my operating systems, on desktops, laptops, phones etc. and I am trying to understand how to use these all over again!
+
+Oh, and finally, it is now only a month or so until I start my placement year at SAP as a software developer associate which I’m greatly looking forward to! So on top of all this, I’m also looking for a new flat up in Knutsford or the surrounding areas to move into before I start.
+
+So, I think that’s all I’ve got to say for now, I’m hoping to keep this blog more up-to-date and start some more projects now that I’ve got a bit more free time on my hands.
+
+See you soon!

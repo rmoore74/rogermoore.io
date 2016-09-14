@@ -1,0 +1,54 @@
+So the other day, I spent far too long trying to install CentOS 7 on my laptop that doesn’t have a CD-ROM drive installed on it. My only option was to create a bootable USB drive. Sounds simple right? Well, turns out that it actually is quite simple, it just involved a lot of trial and error – for me anyway! So, to save you the time and trouble that I had when trying to install CentOS 7 (which is totally worth it, by the way) I thought I’d write this simple guide that you can follow to get you up and running as soon as possible.
+
+What you need
+CentOS 7 .iso
+USB Drive
+Linux (or use something like cygwin for Windows)
+As I had discovered, CentOS 7 is very picky when it comes to the medium you wish to use to burn the .iso to the USB drive. I had tried all the regular options, like Rufus, UNetbootin, etc., but to no avail. When it came down to it the only way I could burn my image was using the ‘dd’ command.
+
+What you need to do
+To begin with, make sure that your USB provides the required amount of diskspace for the CentOS 7 disk image. Once you have done that you are going to want to plug your USB into the USB port.
+
+Then open up a terminal window and unmount your USB drive
+
+sudo umount /dev/sdb1
+
+Is your USB drive mounted somewhere else? Take yourself to the directory where your USB folder is, in nautilus (file manager), then press CTRL+L to find out the path to the directory. Once you have that, in terminal write:
+
+cat /proc/mounts
+
+Look for the path where your USB and you will find out where to unmount from.
+
+Next, using the dd command you are going to want to write the disk image to your USB drive. To do this, in terminal write:
+
+sudo dd bs=4M if=CentOS-7-1406-x86_64-DVD.iso of=/dev/sdb
+
+You may have to change the name of the disk image file according to what your image file is named
+
+Now you just have to sit back and wait…
+
+…but for how long?!
+
+To keep track of the progress of writing your image to USB there is a neat trick you can do in terminal. Create a new terminal window, or tab, and then find the process ID of the dd command.
+
+pgrep -l '^dd$'
+
+Once you’ve done that, you need to send a USR1 signal to the process.
+
+kill -USR [process ID]
+
+Now in the other terminal window where the dd process is running, it will output the statistics that show how much has been copied to the drive and how quickly it is copying at.
+
+Once the image copying is complete (it will be clear in terminal when this is), which may take a little while, you are going to want to reboot your laptop with the USB still plugged in. Now you need to get to the BIOS menu, this can be achieved by pressing the appropriate function key as soon as you start booting up (for me this was F2).
+
+Once in the BIOS, you need to rearrange the way your computer boots. You need to make the USB drive the main priority, so that when the device restarts it boots straight from the USB drive.
+
+Done that? Now save and exit.
+
+Your device should now restart and boot from the USB.
+
+From here the rest of the process is incredibly simple. You are greeted with the installer GUI which makes it very simple and easy to install the operating system. Make sure that you partition your drives accordingly and choose the appropriate installation package.
+
+Sit back and relax whilst the installer does everything for you!
+
+I hope you have found some value from this article and it makes the process a little more simple for you!

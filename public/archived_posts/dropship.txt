@@ -1,0 +1,19 @@
+﻿Hey there, it’s been a while! I’ve been very busy whilst on my placement year at SAP (which is going absolutely great!!) and have not really had the chance to update this blog much.
+
+So, to tide things over and make this place look a little less dead I’ve decided to make a post on a little something I was working on a short while ago. Thus, I present thee with the Dropshipping Item Database Manager!
+
+This is something that I decided to create to help my girlfriend and I with a little dropshipping venture that we were working on. This venture has sadly taken a bit of a backburner for the time-being, as we are both very busy with my girlfriend being on her year abroad in France and me being on my placement year.
+
+Without further ado, here are some screenshots of Dropshipping Item Database Manager!
+
+[These can now be found on the Projects page!]
+
+Sorry for the excessive blurrification, however, I’d like to keep the anonymity of the website – for now at least.
+
+The main technologies used here for this project are PHP and SQL. Mainly because these work on the server that we are using to host the website. However, out of interest I am moving more toward and exploring different ways to develop web applications. For example, using the MEAN stack and developing web applications in Golang.
+
+This project is not entirely finished, however, the main functionality is there – searching, adding, editing, and removing products etc. I think later on I’d like to add some sort of statistics because that could be cool. When it is finished to a standard that I’m satisfied, I may post the source here! But for now, just wanted to show you that I’m still alive and developing.
+
+I may make a couple more posts today that I’ve been thinking about. So keep an eye open…
+
+Stay safe.
