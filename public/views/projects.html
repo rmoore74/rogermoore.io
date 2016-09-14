@@ -2,31 +2,15 @@
     <div class="row">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="row">
-        <h5>Race Data Application</h5>
-        <span style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-    </div>
-    <div class="row project-images">
-        <a href="http://rogermoore.io/blog/wp-content/uploads/2016/01/auth.png" data-lightbox="project-1">
-            <img src="http://rogermoore.io/blog/wp-content/uploads/2016/01/auth-150x150.png" width="50px" height="50px" />
-        </a>
-        <a href="http://rogermoore.io/blog/wp-content/uploads/2016/01/auth2.png" data-lightbox="project-1">
-            <img src="http://rogermoore.io/blog/wp-content/uploads/2016/01/auth2-150x150.png" width="50px" height="50px" />
-        </a>
-        <a href="http://rogermoore.io/blog/wp-content/uploads/2016/01/auth3.png" data-lightbox="project-1">
-            <img src="http://rogermoore.io/blog/wp-content/uploads/2016/01/auth3-150x124.png" width="50px" height="50px" />
-        </a>
-        <a href="http://rogermoore.io/blog/wp-content/uploads/2016/01/charts.png" data-lightbox="project-1">
-            <img src="http://rogermoore.io/blog/wp-content/uploads/2016/01/charts-150x150.png" width="50px" height="50px" />
-        </a>
-        <a href="http://rogermoore.io/blog/wp-content/uploads/2016/01/main_list.png" data-lightbox="project-1">
-            <img src="http://rogermoore.io/blog/wp-content/uploads/2016/01/main_list-150x150.png" width="50px" height="50px" />
-        </a>
-        <a href="http://rogermoore.io/blog/wp-content/uploads/2016/01/results.png" data-lightbox="project-1">
-            <img src="http://rogermoore.io/blog/wp-content/uploads/2016/01/results-150x150.png" width="50px" height="50px" />
-        </a>
-        <a href="http://rogermoore.io/blog/wp-content/uploads/2016/01/search.png" data-lightbox="project-1">
-            <img src="http://rogermoore.io/blog/wp-content/uploads/2016/01/search-150x150.png" width="50px" height="50px" />
-        </a>
+    <div ng-repeat="proj in projects"> 
+        <div class="row">
+            <h5>{{ proj.title }}</h5>
+            <span>{{ proj.description }}</span>
+        </div>
+        <div class="row project-images" ng-repeat="img in proj.pictures">
+            <a href="{{ img.imgUrl }}" data-lightbox="project-1">
+                <img src="{{ img.thumbUrl }}" width="50px" height="50px" />
+            </a>
+        </div>
     </div>
 </section>

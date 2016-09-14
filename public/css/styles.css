@@ -1,5 +1,6 @@
 body {
     color: #A9A9A9;
+    /*color: #000000;*/
     text-align: justify;
 }
 
@@ -19,6 +20,7 @@ a {
 
 #head h2 {
     color: #A9A9A9;
+    /*color: #000000;*/
 }
 
 .navbar {
@@ -39,6 +41,7 @@ a {
 .navbar li a {
     margin-right: 15px;
     color: #A9A9A9;
+    /*color: #000000;*/
 }
 
 .navbar li a:hover {
@@ -72,7 +75,8 @@ a {
 }
 
 .social-bar a {
-    color: #A9A9A9;   
+    color: #A9A9A9;
+    /*color: #000000;*/
 }
 
 .social-bar a:hover {
@@ -90,6 +94,7 @@ a {
 
 .home-content a {
     color: #A9A9A9;
+    /*color: #000000;*/
 }
 
 .home-content a:hover {
