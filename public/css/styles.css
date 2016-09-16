@@ -1,6 +1,5 @@
 body {
     color: #A9A9A9;
-    /*color: #000000;*/
     text-align: justify;
 }
 
@@ -20,7 +19,6 @@ a {
 
 #head h2 {
     color: #A9A9A9;
-    /*color: #000000;*/
 }
 
 .navbar {
@@ -41,7 +39,6 @@ a {
 .navbar li a {
     margin-right: 15px;
     color: #A9A9A9;
-    /*color: #000000;*/
 }
 
 .navbar li a:hover {
@@ -76,7 +73,6 @@ a {
 
 .social-bar a {
     color: #A9A9A9;
-    /*color: #000000;*/
 }
 
 .social-bar a:hover {
@@ -94,7 +90,6 @@ a {
 
 .home-content a {
     color: #A9A9A9;
-    /*color: #000000;*/
 }
 
 .home-content a:hover {
@@ -107,4 +102,26 @@ a {
 
 .project-images img {
     margin: 5px;
+}
+
+.alert-success {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ABEBC6;
+    border-left: 6px solid #28B463;
+    color: #28B463;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.alert-error {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F5B7B1;
+    border-left: 6px solid #CB4335;
+    color: #CB4335;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
 }

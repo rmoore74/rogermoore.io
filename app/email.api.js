@@ -6,21 +6,29 @@ var config     = require('../config/mail.conf');
 
 router.post('/sendemail', function(req, res) {
 
-    // TODO: to take request body and use user params
+    // store http headers in variables
+    var name    = req.body.nameInput;
+    var email   = req.body.emailInput;
+    var message = req.body.messageInput;
 
+    console.log(req.body);
+
+    // create transporter to send email
     var transporter = nodemailer.createTransport('smtps://' + config.user + ':' + config.pass + '@smtp.gmail.com');
 
+    // define mailing options
     var mailOptions = {
-        from: 'test@test.com',
+        from: name,
         to: 'me@rogermoore.io',
-        subject: 'test email',
-        text: 'test test test test'
+        subject: 'CONTACT FORM: ' + name + " - " + email,
+        text: message
     }
 
+    // use transporter object to send email
     transporter.sendMail(mailOptions, function(err, response) {
         if (err) {
             console.log(err);
-            res.json({'success':'true'});
+            res.json({'success':'false'});
         } else {
             console.log('it worked');
             res.json({'success':'true'});

@@ -1,20 +1,28 @@
 <section>
     <p>Would you like to get in touch? I'm very friendly so don't be timid! Use this form to get in touch with me directly and I'll get back to you as soon as I can. Please provide your name and email address so that I know who I will be getting back in touch with. Talk to you soon!</p>
-    <form>
+    <div ng-show="emailSuccess" class="alert-success">
+        <strong>Success!</strong> Your email has successfully been sent. I shall get back to you as quickly as possible.
+    </div>
+    <div ng-show="emailError" class="alert-error">
+        <strong>Error</strong> I'm afraid something has gone wrong. Please try again or email directly at me@rogermoore.io.
+    </div>
+    <form ng-submit="submit()">
         <div class="row">
             <div class="five columns">
                 <label for="name">Your name</label>
-                <input class="u-full-width" placeholder="Jane Doe" id="nameInput" type="text" required />
+                <input class="u-full-width" placeholder="Jane Doe" id="nameInput" name="nameInput" type="text" required />
             </div>
             <div class="five columns">
                 <label for="email">Your email</label>
-                <input class="u-full-width" placeholder="jane.doe@email.com" id="emailInput" type="email" required />
+                <input class="u-full-width" placeholder="jane.doe@email.com" id="emailInput" name="emailInput" type="email" required />
             </div>
         </div>
         <div class="row">
             <label for="message">Your message</label>
-            <textarea class="u-full-width" placeholder="Hello Roger..." id="messageInput" required></textarea>
-            <input class="button-primary" value="Send" type="submit" />
+            <textarea class="u-full-width" placeholder="Hello Roger..." id="messageInput" name="messageInput" required></textarea>
+            <button id="sendBtn" class="button-primary" type="submit" >
+                Send
+            </button>
         </div>
     </form>
     <div class="row">
