@@ -5,6 +5,8 @@ angular.module('ContactCtrl', []).controller('ContactController', function($scop
 
     $scope.submit = function () {
 
+        $('.loading-overlay').css('width', '100%');
+
         var formData = {
             'nameInput': $('#nameInput').val(),
             'emailInput': $('#emailInput').val(),
@@ -20,14 +22,22 @@ angular.module('ContactCtrl', []).controller('ContactController', function($scop
             if (response.data.success) {
                 $scope.emailSuccess = true;
                 $scope.emailError = false;
+
+                $('#nameInput').prop('value', '');
+                $('#emailInput').prop('value', '');
+                $('#messageInput').prop('value', '');
             } else {
                 $scope.emailError = true;
                 $scope.emailSuccess = false;
             }
+
+            $('.loading-overlay').css('width', '0');
         }, function errorCallback(response) {
 
             $scope.emailError = true;
             $scope.emailSuccess = false;
+
+            $('.loading-overlay').css('width', '0');
         });
     }
 
