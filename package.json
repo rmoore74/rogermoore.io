@@ -10,6 +10,7 @@
         "morgan": "~1.7.0",
         "path": "~0.12.7",
         "nodemailer": "2.6.0",
+        "sendmail": "1.2.0",
         "helmet": "latest"
     }
 }
