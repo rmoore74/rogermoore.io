@@ -9,7 +9,7 @@ var methodOverride = require('method-override');
 // configuration
 var app  = express();
 var db   = require('./config/db.conf');
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 80;
 
 // set up helmet for security
 app.use(helmet());
